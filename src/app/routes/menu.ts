@@ -1,7 +1,7 @@
 /* http://fontello.github.io/awesome-uni.font/demo.html */
 const home = {
-    text: 'Rock',
-    link: '/rock',
+    text: 'Radicado',
+    link: '/radicado',
     icon: 'icon-pin'
 };
 
@@ -15,37 +15,37 @@ const headingComponents = {
     heading: true
 };
 
-const masters = {
-    text: 'Maestros',
-    link: '/masters',
-    icon: 'icon-note',
-    submenu: [
-        {
-            text: 'Listas',
-            link: '/masters/items'
-        },
-        {
-            text: 'Opciones',
-            link: '/masters/item-details'
-        }
-    ]
-}
+// const masters = {
+//     text: 'Maestros',
+//     link: '/masters',
+//     icon: 'icon-note',
+//     submenu: [
+//         {
+//             text: 'Listas',
+//             link: '/masters/items'
+//         },
+//         {
+//             text: 'Opciones',
+//             link: '/masters/item-details'
+//         }
+//     ]
+// }
 
-const security = {
-    text: 'Seguridad',
-    link: '/security',
-    icon: 'icon-chemistry',
-    submenu: [
-        {
-            text: 'Roles',
-            link: '/security/roles'
-        },
-        {
-            text: 'Usuarios',
-            link: '/security/users'
-        }
-    ]
-}
+// const security = {
+//     text: 'Seguridad',
+//     link: '/security',
+//     icon: 'icon-chemistry',
+//     submenu: [
+//         {
+//             text: 'Roles',
+//             link: '/security/roles'
+//         },
+//         {
+//             text: 'Usuarios',
+//             link: '/security/users'
+//         }
+//     ]
+// }
 
 const logout = {
     text: 'Sign Out',
@@ -62,8 +62,6 @@ export const menu = [
     headingMain,
     home,    
     headingComponents,
-    masters,
-    security,
     headingOthers,
     logout
 ];

@@ -1,7 +1,7 @@
 /* http://fontello.github.io/awesome-uni.font/demo.html */
 const home = {
-    text: 'Radicado',
-    link: '/radicado',
+    text: 'Radicación',
+    link: '/filing-documents',
     icon: 'icon-pin'
 };
 

@@ -20,7 +20,7 @@ export class SettingsService {
         // App Settings
         // -----------------------------------
         this.app = {
-            name: 'Angle',
+            name: 'InterDocsCli - ConnectPlanet',
             description: 'Angular Bootstrap Admin Template',
             year: ((new Date()).getFullYear())
         };

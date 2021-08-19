@@ -49,7 +49,7 @@ const headingComponents = {
 
 const logout = {
     text: 'Sign Out',
-    link: '/sign-out',
+    link: '/home',
     icon: 'icon-logout'
 }
 

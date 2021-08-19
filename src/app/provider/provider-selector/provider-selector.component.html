@@ -1,38 +1,41 @@
 <div _ngcontent-qgx-c153="" class="content-heading">Radicado</div>
 
-<div class="home-container">
-
-    <div class="row center">
-        <div class="col-lg-12">
-            <div class="card b">
-                <div class="card-header center">
-                    <h3   style="color:rgb(240,90,3)">Entidad Prestadora</h3>
-                </div>
-                <div class="card-body center">
-                    <fieldset _ngcontent-uep-c147="">
-                        <div _ngcontent-uep-c147="" class="form-group row center">
-                            <label _ngcontent-uep-c147="" class="col-lg-4 col-form-label text-lg-right">Seleccione</label>
-                            <div _ngcontent-uep-c147="" class="col-lg-12">
-                                <select _ngcontent-uep-c147="" formcontrolname="select" class="form-control ng-dirty ng-valid ng-touched center">
-                                    <option _ngcontent-uep-c147="" value="">Seleccione</option>
-                                    <option _ngcontent-uep-c147="" value="1">Positiva ARL</option>
-                                    <option _ngcontent-uep-c147="" value="2">Comeva EPS</option>
-                                    <option _ngcontent-uep-c147="" value="3">Sura EPS - ARL - SOAT</option>
-                                    <option _ngcontent-uep-c147="" value="4">AXA COLPATRIA ARL</option>
-                                    <option _ngcontent-uep-c147="" value="4">EQUIDAD SOAT</option>
-                                    <option _ngcontent-uep-c147="" value="4">MAFRE ARL - SOAT</option>
-                                </select><!----></div>
+                <div class="col-lg-12 center">
+                    <div class="card b">
+                        <div class="card-header center">
+                            <h3 style="color:rgb(240,90,3)">Entidad Prestadora</h3>
+                        </div>
+                        <div class="card-body center">
+                            <fieldset _ngcontent-uep-c147="">
+                                <div _ngcontent-uep-c147="" class="form-group row center">
+                                    <label _ngcontent-uep-c147=""
+                                        class="col-lg-4 col-form-label text-lg-right">Seleccione</label>
+                                    <div _ngcontent-uep-c147="" class="col-lg-12">
+                                        <select [(ngModel)]="opcionSeleccionado"  (change)="capturar()" _ngcontent-uep-c147="" formcontrolname="select"
+                                            class="form-control ng-dirty ng-valid ng-touched center">
+                                            <option _ngcontent-uep-c147="" value="">Seleccione</option>
+                                            <option _ngcontent-uep-c147="" value="1">Positiva ARL</option>
+                                            <option _ngcontent-uep-c147="" value="2">Comeva EPS</option>
+                                            <option _ngcontent-uep-c147="" value="3">Sura EPS - ARL - SOAT</option>
+                                            <option _ngcontent-uep-c147="" value="4">AXA COLPATRIA ARL</option>
+                                            <option _ngcontent-uep-c147="" value="5">EQUIDAD SOAT</option>
+                                            <option _ngcontent-uep-c147="" value="6">MAFRE ARL - SOAT</option>
+                                        </select>
+                                          <!---->
+                                    </div>
                                     <div _ngcontent-uep-c147="" class="col-lg-4">
                                         <small _ngcontent-uep-c147="" class="text-mute">
-    
+
                                         </small>
                                     </div>
+                                </div>
+                            </fieldset>
+                                  
                         </div>
-                    </fieldset>
-                </div>
-                <div class="center">
-                    <p><a class="btn btn-primary  center"   style="background:rgb(240,90,3)" target="_blank">Cargar</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
+                        <div class="center">
+                            <p><a class="btn btn-primary  center" (click)="btnEnviarHijo()" style="background:rgb(240,90,3)"
+                                    target="_blank" [routerLink]="'/filing-File'">Cargar</a></p>
+                        </div>
+                    </div>
+              
+    

@@ -12,6 +12,8 @@ import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
 import { RoutesModule } from './routes/routes.module';
 import { ProviderSelectorComponent } from './provider/provider-selector/provider-selector.component';
+import { ProviderTranformComponent } from './provider/provider-tranform/provider-tranform.component';
+import { ProviderFileComponent } from './provider/provider-file/provider-file.component';
 
 // https://github.com/ocombe/ng2-translate/issues/218
 export function createTranslateLoader(http: HttpClient) {
@@ -21,7 +23,9 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
     declarations: [
         AppComponent,
-        ProviderSelectorComponent
+        ProviderSelectorComponent,
+        ProviderFileComponent,
+        ProviderTranformComponent
     ],
     imports: [
         HttpClientModule,

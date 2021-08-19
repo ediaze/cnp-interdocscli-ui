@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-provider-file',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./provider-file.component.scss']
 })
 export class ProviderFileComponent implements OnInit {
-
+  @Input() recibidoDePadre: string='';
   constructor() { }
 
   ngOnInit(): void {

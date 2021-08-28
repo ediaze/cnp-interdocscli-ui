@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter  } from '@angular/core';
-import { FormControl } from '@angular/forms';
+
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-provider-selector',
@@ -11,10 +12,8 @@ export class ProviderSelectorComponent implements OnInit {
   verSeleccion: string = '';
     prestadores: string[] = [];
     prest: string = '';
-    @Output()  recibidoDePadre = new EventEmitter<string>();
-    padreForm: FormControl = new FormControl();
    
-  constructor() { 
+  constructor(private _router:Router) { 
 
     this.prestadores[0]='Seleccione';
     this.prestadores[1]='Positiva ARL';
@@ -37,7 +36,7 @@ export class ProviderSelectorComponent implements OnInit {
     
   }
   btnEnviarHijo():void {
-    this.recibidoDePadre.emit(this.prest) ;
+    this._router.navigate(['/filing-File',this.prest]);
     console.log('Click',this.prest);
   }
 }

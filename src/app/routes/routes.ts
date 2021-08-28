@@ -13,8 +13,10 @@ export const routes: Routes = [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
             { path: 'filing-documents', component: ProviderSelectorComponent },
-            { path: 'filing-File', component: ProviderFileComponent },
-            { path: 'filing-trans', component: ProviderTranformComponent }
+            // { path: 'filing-File', component: ProviderFileComponent },
+            { path: 'filing-File/:des', component: ProviderFileComponent },
+            
+            { path: 'filing-trans/:des', component: ProviderTranformComponent }
         ]
     },
 

@@ -8,7 +8,7 @@
                     <p class="lead">Entidad Prestadora</p>
                 </div>
                 <div class="card-header center">
-                    <h3 style="color:rgb(240,90,3)">Sanitas EPS</h3>
+                    <h3 style="color:rgb(240,90,3)">{{desc}}</h3>
                 </div>
             </div>
         </div>
@@ -169,12 +169,15 @@
   <!-- [routerLink]="'/filing-transform'" -->
   
                     <div class="center">
-                        <p><a  class="btn btn-primary  center"  [routerLink]="'/filing-trans'" style="background:rgb(240,90,3)"
-                                target="_blank">Transformar Documentos</a><p>
+                        <p>
+                            <button type="button" class="btn btn-outline-primary btn-block" (click)="btnEnviarHijo()" 
+                            style="background:rgb(240,90,3)"
+                            target="_blank">Transformar Documentos
+                        </button>
+                        <p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>

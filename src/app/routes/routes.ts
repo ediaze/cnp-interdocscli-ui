@@ -4,6 +4,7 @@ import { LayoutComponent } from '../layout/layout.component';
 import { ProviderSelectorComponent } from '../provider/provider-selector/provider-selector.component';
 import { ProviderTranformComponent } from '../provider/provider-tranform/provider-tranform.component';
 import { ProviderFileComponent }     from '../provider/provider-file/provider-file.component';
+import { ConfiguracionComponent } from '../provider/configuracion/configuracion.component';
 export const routes: Routes = [
 
     {
@@ -16,7 +17,10 @@ export const routes: Routes = [
             // { path: 'filing-File', component: ProviderFileComponent },
             { path: 'filing-File/:des', component: ProviderFileComponent },
             
-            { path: 'filing-trans/:des', component: ProviderTranformComponent }
+            { path: 'filing-trans/:des', component: ProviderTranformComponent },
+            { path: 'filing-config', component: ConfiguracionComponent }
+            
+            
         ]
     },
 

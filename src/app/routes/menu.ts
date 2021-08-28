@@ -5,6 +5,12 @@ const home = {
     icon: 'icon-pin'
 };
 
+const settings = {
+    text: 'Configuración',
+    link: '/filing-config',
+    icon: 'icon-wrench'
+};
+
 const headingMain = {
     text: 'Módulos',
     heading: true
@@ -60,7 +66,8 @@ const headingOthers = {
 
 export const menu = [
     headingMain,
-    home,    
+    home,
+    settings,
     headingComponents,
     headingOthers,
     logout

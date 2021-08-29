@@ -16,12 +16,12 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="card b">
-                <div class="card-header center">                 
-                </div>               
+                <div class="card-header center">
+                </div>
                 <div class="col-lg-12 center">
                     <div _ngcontent-qgx-c180="" class="input-group mb-2 mr-sm-2">
                         <div _ngcontent-qgx-c180="" class="input-group-prepend">
-                            <div _ngcontent-qgx-c180="" class="input-group-text" style="padding: 0;">   
+                            <div _ngcontent-qgx-c180="" class="input-group-text" style="padding: 0;">
                                 <div _ngcontent-qgx-c159="">
                                     <em _ngcontent-qgx-c159="" class="fa-2x mr-2 fas fa-search"></em>
                                 </div>
@@ -31,6 +31,9 @@
                             placeholder="Búscar Episodio" class="form-control">
                     </div>
                 </div>
+
+
+
                 <div _ngcontent-jgt-c215="" class="card card-default">
                     <div class="card-header center">
                         <h3 style="color:rgb(240,90,3)">Descripción Configuración</h3>
@@ -153,6 +156,73 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <div _ngcontent-jgt-c215="" class="card card-default">
+        <div class="card-header center">
+            <h3 style="color:rgb(240,90,3)">Proceso de Radicación</h3>
+        </div>
+        <div _ngcontent-jgt-c215="" class="card-body">
+            <div _ngcontent-jgt-c215="" class="table-responsive">
+                <table _ngcontent-jgt-c215="" class="table table-striped table-bordered table-hover">
+                    <thead _ngcontent-jgt-c215="">
+                        <tr _ngcontent-jgt-c215="">
+                            <th _ngcontent-jgt-c215=""> </th>
+                            <th _ngcontent-jgt-c215=""></th>
+                        </tr>
+                    </thead>
+                    <tbody _ngcontent-jgt-c215="">
+                        <tr _ngcontent-jgt-c215="">
+                            <td _ngcontent-jgt-c215="">Proceso Homologación</td>
+                            <td _ngcontent-jgt-c215=""> Proceso copia y conversión</td>
+                        </tr>
+                        <tr _ngcontent-jgt-c215="">
+                            <td _ngcontent-jgt-c215="">Completado
+                            </td>
+                            <td _ngcontent-jgt-c215=""> Completado
+                            </td>
+                        </tr>
+                        <tr _ngcontent-jgt-c215="">
+                            <td _ngcontent-jgt-c215="">Proceso Agrupación
+                            </td>
+                            <td _ngcontent-jgt-c215="">Proceso Renombrar Archivos</td>
+                        </tr>
+                        <tr _ngcontent-jgt-c215="">
+                            <td _ngcontent-jgt-c215="">Requerido </td>
+                            <td _ngcontent-jgt-c215="">Requerido</td>
+                        </tr>
+                        <tr _ngcontent-jgt-c215="">
+                            <td _ngcontent-jgt-c215="">Proceso Valoración Rips
+                            </td>
+                            <td _ngcontent-jgt-c215="">Proceso Compresión de Archivos</td>
+                        </tr>
+
+                        <tr _ngcontent-jgt-c215="">
+                            <td _ngcontent-jgt-c215="">Requerido </td>
+                            <td _ngcontent-jgt-c215="">Requerido</td>
+                        </tr>
+
+                        <tr _ngcontent-jgt-c215="">
+                            <td _ngcontent-jgt-c215="">Requerido </td>
+                            <td _ngcontent-jgt-c215="">Requerido</td>
+                        </tr>
+
+                        <tr _ngcontent-jgt-c215="">
+                            <td _ngcontent-jgt-c215="">Proceso Generar Archivo Relación </td>
+                        </tr>
+
+                        <tr _ngcontent-jgt-c215="">
+                            <td _ngcontent-jgt-c215="">Requerido </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
     <div class="row center">
         <div class="col-lg-12">
             <div class="card b">
@@ -164,16 +234,31 @@
                     <div _ngcontent-jgt-c180="" class="form-group row center">
                         <div _ngcontent-jgt-c180="" class="col-md-10">
                             <input _ngcontent-jgt-c180="" type="text" class="form-control form-control-rounded">
+                      <br>
+                            <div class="d-flex align-items-center mb-6">
+                                <div>Exportar PDF</div>
+                                <div class="ml-auto"><label class="switch switch-lg m-6"><input type="checkbox"
+                                            checked="checked"><span></span></label></div>
+                            </div>
+                            <br>
+    
+                            <div class="d-flex align-items-center mb-6">
+                                <div>Exportar Excel</div>
+                                <div class="ml-auto"><label class="switch switch-lg m-6"><input type="checkbox"
+                                            checked="checked"><span></span></label></div>
+                            </div>
+    
                         </div>
+
+                      
                     </div>
-  <!-- [routerLink]="'/filing-transform'" -->
-  
+                    <!-- [routerLink]="'/filing-transform'" -->
+
                     <div class="center">
                         <p>
-                            <button type="button" class="btn btn-outline-primary btn-block" (click)="btnEnviarHijo()" 
-                            style="background:rgb(240,90,3)"
-                            target="_blank">Transformar Documentos
-                        </button>
+                            <button type="button" class="btn btn-outline-primary btn-block" (click)="btnEnviarHijo()"
+                                style="background:rgb(240,90,3)" target="_blank">Transformar Documentos
+                            </button>
                         <p>
                     </div>
                 </div>
